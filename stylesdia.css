@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.barraSuperior {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 24px;
+}
+
+#dataEspecifica {
+  margin-left: 10px;
+}
+
+#novaReserva, #voltar {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#novaReserva:hover, #voltar:hover {
+  background-color: #218838;
+}
+
+#voltar {
+  background-color: #ffc107;
+}
+
+#voltar:hover {
+  background-color: #e0a800;
+}
+
+.conteudo {
+  padding: 20px;
+}
+
+#listaEventos .evento {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.remover {
+  background-color: #ff0000; /* Vermelho */
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.editar {
+  background-color: #0056b3; /* Azul */
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.remover:hover {
+  background-color: #ff6666; /* Tom mais claro de vermelho ao passar o mouse */
+}
+
+.editar:hover {
+  background-color: #66a3ff; /* Tom mais claro de azul ao passar o mouse */
+}
+
+
+#novoEventoForm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.esconder {
+  display: none;
+}
+
+.camada {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative; /* Adicionando posição relativa para posicionamento absoluto */
+}
+.conteudo {
+  text-align: center;
+}
+
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao.fechar {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.botao.fechar:hover {
+  background-color: #c82333;
+}
+
+#formEvento {
+  display: flex;
+  flex-direction: column;
+}
+
+#formEvento input, #formEvento textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#formEvento button {
+  padding: 10px;
+}
+
+.mensagens-erro {
+  background-color: #f8d7da; /* Cor de fundo do Bootstrap para erro */
+  border: 1px solid #f5c6cb; /* Cor da borda do Bootstrap para erro */
+  text-align: center;
+  padding: 10px;
+  top: 18px; /* Ajuste para posicionar acima da camada */
+  left: 50%; /* Centralizando horizontalmente */
+  position: absolute;
+  transform: translateX(-50%); /* Ajuste fino para centralização horizontal */
+  width: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: none; /* Inicialmente oculto */
+}
+
+.erro {
+  color: #dc3545; /* Vermelho */
+  font-weight: bold;
+}

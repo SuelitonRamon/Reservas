@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronograma</title>
+  <link rel="stylesheet" href="stylesdia.css">
+</head>
+<body>
+  <div class="barraSuperior">
+    <div class="titulo">
+      <span id="dataEspecifica"></span>
+    </div>
+    <div>
+      <button id="novaReserva" onclick="mostrarForm()">Nova Reserva</button>
+      <button id="voltar">Voltar</button>
+    </div>
+  </div>
+  <div id="mensagemErro" class="mensagemErro esconder"></div>
+  <div class="conteudo">
+    <div id="listaEventos"></div>
+  </div>
+  <div id="novoEventoForm" class="esconder">
+    <div id="mensagensErro" class="mensagens-erro"></div>
+    <div class="camada">
+      <div class="conteudo">
+        <h2>Nova Reserva</h2>
+        <form id="formEvento">
+          <input type="hidden" id="eventoId">
+          <input type="text" id="titulo" placeholder="Título" required>
+          <textarea id="descricao" placeholder="Descrição" required></textarea>
+          <input type="time" id="hora" required>
+          <button type="submit" class="botao">Salvar</button>
+          <button type="button" class="botao fechar" onclick="fecharForm()">Cancelar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>
